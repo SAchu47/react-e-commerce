@@ -1,0 +1,49 @@
+.header_main {
+  height: 60px;
+  background: #23856d;
+  padding: 6px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header_main_contact {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: white;
+}
+
+.main_contact_details {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.header_main_follow {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.header_main_social {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: white;
+}
+
+.main_social {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.main_social_icon {
+  padding: 5px;
+}
