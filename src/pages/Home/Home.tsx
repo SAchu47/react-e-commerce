@@ -4,6 +4,7 @@ import {
   FeaturedProducts,
   Features,
   FlashHeader,
+  Footer,
   Header,
   Hero,
 } from '../../components';
@@ -24,6 +25,7 @@ const Home: FC = (): ReactElement => {
       <Category />
       <FeaturedProducts />
       <Features />
+      <Footer />
     </div>
   );
 };

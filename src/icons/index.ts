@@ -1,3 +1,6 @@
+import { InstagramIcon } from './InstagramIcon';
+import { TwitterIcon } from './TwitterIcon';
+import { FacebookIcon } from './FacebookIcon';
 import { CardIcon } from './CardIcon';
 import { LikeIcon } from './LikeIcon';
 import { CartIcon } from './CartIcon';
@@ -11,5 +14,8 @@ export {
     CartIcon,
     LikeIcon,
     EyeIcon,
-    CardIcon
+    CardIcon,
+    FacebookIcon,
+    TwitterIcon,
+    InstagramIcon
 };
