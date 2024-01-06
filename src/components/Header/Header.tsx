@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from 'react';
+import React, { FC, ReactElement, useState } from 'react';
 import styles from './Header.module.css';
 import { AccountIcon, CartIcon, LikeIcon, SearchIcon } from '../../icons';
 
@@ -10,16 +10,53 @@ import { AccountIcon, CartIcon, LikeIcon, SearchIcon } from '../../icons';
 */
 
 const Header: FC = (): ReactElement => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
   return (
     <div className={styles.hero_main}>
       <div className={styles.hero_main_pages}>
         <h3>Rohini Silks</h3>
-        <div className={styles.main_pages_links}>
-          <div className="links">Home</div>
-          <div className="links">Shop</div>
-          <div className="links">About</div>
-          <div className="links">Blog</div>
-          <div className="links">Contact</div>
+        <button
+          className={styles.hamburger}
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
+          {/* icon from heroicons.com */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="white"
+          >
+            <path
+              fillRule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+        <div>
+          <ul className={styles.main_pages_links}>
+            <li className="links">Home</li>
+            <li className="links">Shop</li>
+            <li className="links">About</li>
+            <li className="links">Blog</li>
+            <li className="links">Contact</li>
+          </ul>
+          <ul
+            className={`${
+              !isNavExpanded
+                ? `${styles.main_pages_links_mobile}`
+                : `${styles.main_pages_links_mobile_hidden}`
+            }`}
+          >
+            <li className="links">Home</li>
+            <li className="links">Shop</li>
+            <li className="links">About</li>
+            <li className="links">Blog</li>
+            <li className="links">Contact</li>
+          </ul>
         </div>
       </div>
       <div className={styles.hero_main_buttons}>

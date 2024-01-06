@@ -43,7 +43,7 @@ const Footer: FC = (): ReactElement => {
         </div>
       </div>
       <div className={styles.footer_main_made}>
-        <h6>Made With Love By Sachin All Right Reserved </h6>
+        <h6>Made With Love By Sachin. All Right Reserved</h6>
       </div>
     </div>
   );

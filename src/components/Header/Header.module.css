@@ -12,17 +12,32 @@
   gap: 40px;
   text-align: center;
   align-items: center;
-  justify-content: center;
 }
 
 .hero_main_pages h3 {
   color: #23a6f0;
 }
 
+.hamburger {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #23856d;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: none;
+}
+
 .main_pages_links {
   display: flex;
-  flex-direction: row;
+  flex-direction: row !important;
   gap: 15px;
+}
+
+.main_pages_links_mobile {
+  display: none;
 }
 
 .hero_main_buttons {
@@ -46,4 +61,50 @@
   padding: 15px;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 813px) {
+  .hero_main {
+    height: 60px;
+  }
+
+  .hero_main_pages {
+    width: 100%;
+    position: relative;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+
+  .hero_main_buttons {
+    display: none;
+  }
+
+  .main_pages_links {
+    display: none;
+  }
+
+  .main_pages_links_mobile {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-top: 1px solid black;
+    z-index: 100;
+    display: block;
+  }
+
+  .main_pages_links_mobile_hidden {
+    display: none;
+  }
+
+  li:hover {
+    background-color: #eee;
+  }
 }
