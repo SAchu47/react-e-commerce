@@ -14,7 +14,7 @@ const Hero: FC = (): ReactElement => {
         <div className={styles.two_container_box}>
           <div className={styles.two_container_details}>
             <h6>5 Items</h6>
-            <h3>FURNITURE</h3>
+            <h3>CLOTHING</h3>
             <h6>Read More</h6>
           </div>
           <img src="product1.jpg" alt="" />
@@ -25,7 +25,7 @@ const Hero: FC = (): ReactElement => {
           <div className={styles.two_container_box}>
             <div className={styles.two_container_details}>
               <h6>5 Items</h6>
-              <h3>FURNITURE</h3>
+              <h3>CLOTHING</h3>
               <h6>Read More</h6>
             </div>
             <img src="product2.jpg" alt="" />
@@ -33,7 +33,7 @@ const Hero: FC = (): ReactElement => {
           <div className={styles.two_container_box}>
             <div className={styles.two_container_details}>
               <h6>5 Items</h6>
-              <h3>FURNITURE</h3>
+              <h3>CLOTHING</h3>
               <h6>Read More</h6>
             </div>
             <img src="product2.jpg" alt="" />
@@ -43,7 +43,7 @@ const Hero: FC = (): ReactElement => {
           <div className={styles.two_container_box}>
             <div className={styles.two_container_details}>
               <h6>5 Items</h6>
-              <h3>FURNITURE</h3>
+              <h3>CLOTHING</h3>
               <h6>Read More</h6>
             </div>
             <img src="product2.jpg" alt="" />
@@ -51,7 +51,7 @@ const Hero: FC = (): ReactElement => {
           <div className={styles.two_container_box}>
             <div className={styles.two_container_details}>
               <h6>5 Items</h6>
-              <h3>FURNITURE</h3>
+              <h3>CLOTHING</h3>
               <h6>Read More</h6>
             </div>
             <img src="product2.jpg" alt="" />
